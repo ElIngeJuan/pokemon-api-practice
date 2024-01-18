@@ -1,0 +1,32 @@
+
+.boton{
+    background-color: #D91A4D;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+}
+
+.boton:active{
+    transform: translateY(4px)
+}
+.boton:hover{
+    background-color: #B91340;
+}
+
+.contenedor-boton{
+    position: relative;
+}
+
+.sombra-boton{
+    width: 60px;
+    height: 60px;
+    background-color: #1790BF;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    z-index: -1;
+}

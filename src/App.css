@@ -1,0 +1,61 @@
+.contenedor-botones{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-cartas{
+
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.contenedor-cartas .carta:nth-child(1){
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  transition: 100ms;
+  transform: rotate(-5deg) translateY(10px);
+  &:hover{
+    transform: rotate(-5deg) translateY(0px);
+  }
+}
+.contenedor-cartas .carta:nth-child(2){
+  position: absolute;
+  left: 150px;
+  z-index: 2;
+  transition: 100ms;
+  &:hover{
+    transform:translateY(10px);
+  }
+
+}
+.contenedor-cartas .carta:nth-child(3){
+  position: absolute;
+  left: 300px;
+  z-index: 1;
+  transition: 100ms;
+  transform: rotate(5deg) translateY(10px);
+  &:hover{
+    transform: rotate(5deg) translateY(0px);
+  }
+}
+
+.carta1{
+  transform: rotate(5.5deg) translate(140px);
+}
+
+.carta2{
+  transform: rotate(4deg) translate(70px);
+}
